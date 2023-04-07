@@ -1,0 +1,342 @@
+---
+import Layout from '../layouts/Layout.astro';
+import IndexList from '../components/IndexList.jsx';
+import ThemeToggle from '../components/ThemeToggle';
+import { Image } from '@astrojs/image/components';
+---
+
+<Layout title="Welcome to Astro.">
+  <ThemeToggle client:load />
+  <main class="p-4 grid place-content-center">
+    <div class="flex flex-col justify-center items-center mt-4">
+      <h1 class="text-3xl font-semibold text-slate-800 dark:text-slate-100 text-center max-w-3xl">
+        Mis sagas literarias favoritas
+      </h1>
+      <span class="text-slate-700 mt-1 dark:text-slate-300 text-center max-w-3xl"
+        >Un viaje por la literatura fantástica</span
+      >
+    </div>
+    <div class="grid place-content-center mt-8 w-100">
+      <IndexList client:load />
+    </div>
+    <section id="top12" class="py-4 mt-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 12</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">El Hobbit</h2>
+      </div>
+      <img
+        src="https://s3.abcstatics.com/Media/201212/14/hobbit-reportaje-estreno--644x362.jpg"
+        alt="Imagen de El Hobbit"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Comenzamos el top con el Hobbit. Es una novela de fantasía escrita por el británico J.R.R. Tolkien, publicada
+          en 1937. Es la precuela de El Señor de los Anillos y narra las aventuras de Bilbo Bolsón, un hobbit que se une
+          a una compañía de trece enanos y al mago Gandalf para recuperar el tesoro robado por el dragón Smaug en la
+          Montaña Solitaria. En el camino, Bilbo encuentra un anillo mágico que le otorga el poder de la invisibilidad y
+          que tendrá una gran importancia en el futuro de la Tierra Media.
+        </p>
+        <p class="mt-1">
+          El Hobbit es una obra muy popular y admirada por muchos lectores de fantasía, pero no es de mis favoritas.
+          Reconozco su valor literario e imaginativo, pero no me gusta mucho el estilo de escritura de Tolkien, que me
+          parece demasiado detallista y lento. Prefiero otras sagas más dinámicas y modernas.
+        </p>
+      </div>
+    </section>
+    <section id="top11" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 11</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Lovecraft</h2>
+      </div>
+      <img
+        src="https://cutewallpaper.org/21/lovecraft-wallpaper-phone/Lovecraftian-Wallpapers-Album-on-Imgur.jpg"
+        alt="Imagen de un wallpaper de los libros de Lovecraft"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          En este caso, en vez de una saga me referiero al autor, H.P. Lovecraft. Fue un escritor estadounidense de
+          terror y ciencia ficción, nacido en 1890 y fallecido en 1937. Es considerado el maestro del horror cósmico, un
+          subgénero que explora el miedo a lo desconocido y a las fuerzas sobrenaturales que amenazan la existencia
+          humana. Sus obras se caracterizan por crear una mitología propia, basada en antiguos dioses alienígenas,
+          cultos secretos y libros malditos. Algunos de sus libros más famosos son La llamada de Cthulhu, El horror de
+          Dunwich, En las montañas de la locura y El caso de Charles Dexter Ward. Me gustan los libros de Lovecraft
+          porque me fascina su imaginación, el lore del universo en el que transcurren sus libros y su capacidad para
+          crear atmósferas opresivas y perturbadoras. Sin embargo, reconozco que su estilo de escritura puede resultar
+          arcaico y racista para el lector actual, y que sus personajes carecen de profundidad psicológica. Creo que es
+          un autor que hay que leer con espíritu crítico y con respeto por su influencia en el género del terror.
+        </p>
+      </div>
+    </section>
+    <section id="top10" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 10</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Percy Jackson</h2>
+      </div>
+      <img
+        src="https://e0.pxfuel.com/wallpapers/919/278/desktop-wallpaper-percy-jackson-collections.jpg"
+        alt="Imagen de un dibujo con los personajes de las sagas de Percy Jackson"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Este puesto engloba a Rick Riordan, y a sus dos pentalogías más famosas: Percy Jackson y los dioses del Olimpo
+          y Los héroes del Olimpo. Estas novelas narran las aventuras de un grupo de semidioses, hijos de dioses griegos
+          y romanos y humanos, que deben enfrentarse a diversas amenazas mitológicas en el mundo actual. El protagonista
+          principal es Percy Jackson, hijo de Poseidón, que descubre su verdadera identidad y se une a otros semidioses
+          en el Campamento Mestizo. A lo largo de las diez novelas, los personajes viajan por diferentes lugares del
+          mundo y del inframundo, conocen a dioses, monstruos y héroes legendarios, y luchan por salvar el Olimpo y la
+          humanidad. Me gustan estas sagas porque me enseñan mucha mitología griega y romana de una forma divertida y
+          entretenida. Además, los personajes son muy carismáticos y tienen una gran evolución a lo largo de la
+          historia. Mi unica pero con esta saga seria que se nota algo infantil comparadas con otras novelas juveniles a
+          mi gusto. Creo que son unas sagas ideales para los jóvenes lectores que quieran iniciarse en la literatura
+          fantástica.
+        </p>
+      </div>
+    </section>
+    <section id="top9" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 9</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Harry Potter</h2>
+      </div>
+      <img
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23fc4f21-5b9a-4e9a-a553-05b3e5323cc4/de5yl8r-95dbf102-aa3c-4d2a-a57b-f21793517849.jpg/v1/fill/w_1280,h_618,q_75,strp/harry_potter_wallpaper_digital_design____11_by_sefabaris713_de5yl8r-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjE4IiwicGF0aCI6IlwvZlwvMjNmYzRmMjEtNWI5YS00ZTlhLWE1NTMtMDViM2U1MzIzY2M0XC9kZTV5bDhyLTk1ZGJmMTAyLWFhM2MtNGQyYS1hNTdiLWYyMTc5MzUxNzg0OS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.VeGqto9Ex_7levb9CQjeAhXxcshkNJPlxEWgHa1UwJ0"
+        alt="Imagen de un wallpaper de Harry Potter"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Harry Potter es una saga de siete novelas escritas por la británica J.K. Rowling, publicadas entre 1997 y
+          2007. Narra las aventuras de un joven mago, Harry Potter, y sus amigos Ron Weasley y Hermione Granger, que
+          estudian en el Colegio Hogwarts de Magia y Hechicería. Allí, deben enfrentarse al malvado Lord Voldemort, el
+          mago tenebroso que asesinó a los padres de Harry y que busca dominar el mundo mágico y el muggle. Harry Potter
+          es una obra popular de la literatura fantástica, que tiene como atractivo principal la magia y el mundo que
+          crea la autora. Me gusta esta saga porque me parece interesante el concepto de un niño que descubre que es
+          mago y todo el tema de una escuela de magia. Sin embargo, reconozco que la saga tiene muchas inconsistencias y
+          fallos en la trama y en los personajes, que pueden restarle credibilidad y coherencia.
+        </p>
+      </div>
+    </section>
+    <section id="top8" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 8</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">La Tierra Fragmentada</h2>
+      </div>
+      <img
+        src="https://www.fabulantes.com/wp-content/uploads/2019/09/imagen_5_tierra_fragmentada_fabulantes-1024x572.jpg"
+        alt="Imagen de una montaña"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          La Tierra Fragmentada es una trilogía de ciencia ficción y fantasía escrita por la estadounidense N.K.
+          Jemisin, publicada entre 2015 y 2017. Es la primera serie en la historia en ganar tres Premios Hugo
+          consecutivos a la mejor novela por cada uno de sus libros: La quinta estación, El portal de los obeliscos y El
+          cielo de piedra. La trilogía se ambienta en un mundo llamado la Quietud, que sufre constantes cataclismos
+          geológicos que provocan largos períodos de invierno y hambruna. En este mundo, hay personas que pueden
+          controlar la energía de la tierra, llamadas orogenes, pero son perseguidas y esclavizadas por el resto de la
+          sociedad. La trilogía sigue las historias de tres mujeres orogenes en diferentes épocas y lugares, que están
+          conectadas por un misterio que puede cambiar el destino de la Quietud. Me gusta esta trilogía porque me parece
+          una propuesta original y ambiciosa, que mezcla elementos de ciencia ficción y fantasía con temas sociales y
+          políticos. Además, la autora crea un mundo complejo y fascinante, con una mitología propia y una narrativa
+          innovadora. Creo que es una trilogía que hay que leer con mente abierta y con ganas de explorar nuevas
+          posibilidades literarias.
+        </p>
+      </div>
+    </section>
+    <section id="top7" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 7</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Contacto</h2>
+      </div>
+      <img
+        src="https://techietonics.com/wp-content/uploads/2022/01/Contact-carl-sagan-bookreview-22.jpg"
+        alt="Imagen de un wallpaper de Contacto"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Contacto es una novela de ciencia ficción escrita por el astrónomo y divulgador Carl Sagan, publicada en 1985
+          y adaptada al cine en 1997 por Robert Zemeckis. La novela narra la historia de Eleanor Arroway, una científica
+          que trabaja en el proyecto SETI, dedicado a la búsqueda de inteligencia extraterrestre. Un día, recibe una
+          señal de radio procedente de la estrella Vega, que contiene un mensaje con instrucciones para construir una
+          máquina que puede viajar a las estrellas. Eleanor es elegida para ser una de los cinco tripulantes de la
+          máquina, que la llevará a un encuentro con una civilización alienígena. Contacto es una obra que explora temas
+          como la ciencia, la religión, la política y la ética, y que plantea cuestiones sobre el origen y el destino de
+          la humanidad. Me gusta esta novela porque me parece una propuesta realista y rigurosa, que se basa en los
+          conocimientos científicos de su autor y que refleja su pasión por la exploración del cosmos. Además, la novela
+          tiene un ritmo ágil y una trama intrigante, que mantiene el interés del lector hasta el final. Sin embargo,
+          reconozco que la novela puede resultar demasiado técnica y compleja en algunos momentos, y que los personajes
+          no están muy desarrollados ni tienen mucha empatía. Creo que es una novela que hay que leer con mente curiosa
+          y con ganas de aprender sobre el universo.
+        </p>
+      </div>
+    </section>
+    <section id="top6" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 6</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Crónica del asesino de reyes</h2>
+      </div>
+      <img
+        src="https://lacovacha.mx/wp-content/uploads/2019/11/0-cronicadelasesinodereyes-0-rese%C3%B1a.jpg"
+        alt="Imagen de un wallpaper de Contacto"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Crónica del asesino de reyes es una trilogía de fantasía épica escrita por el estadounidense Patrick Rothfuss,
+          publicada entre 2007 y 2011. La trilogía narra la vida de Kvothe, un famoso músico, arcanista y aventurero que
+          se ha retirado a una posada bajo el nombre de Kote. Allí, recibe la visita de Cronista, un escriba que le pide
+          que le cuente su verdadera historia. Kvothe acepta y le relata sus orígenes como huérfano, su ingreso en la
+          Universidad, sus viajes por el mundo y sus encuentros con personajes legendarios y peligrosos. La trilogía se
+          compone de tres libros: El nombre del viento, El temor de un hombre sabio y Las puertas de piedra, este último
+          aún sin publicar. Me gusta esta trilogía porque me parece una buena obra de la literatura fantástica, que
+          combina acción, humor, misterio y romance. Además, el autor crea un mundo rico y complejo, con una magia
+          basada en la ciencia y una mitología propia. A pesar de todo, la trilogía puede resultar frustrante por la
+          demora en la publicación del tercer libro (a fecha de 2023, más de una decada) y por las numerosas incógnitas
+          que quedan sin resolver. Es una trilogía que hay que leer con paciencia y con ganas de disfrutar de una buena
+          historia.
+        </p>
+      </div>
+    </section>
+    <section id="top5" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 5</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Libros sueltos del Cosmere</h2>
+      </div>
+      <img
+        src="https://i.ytimg.com/vi/07WzyahRPBk/maxresdefault.jpg"
+        alt="Imagen de un wallpaper del Cosmere"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          En el puesto tenemos los libros sueltos que pertenecen al universo literario Cosmere de Brandon Sanderson. El
+          Cosmere es el escenario donde transcurren la mayoría de las obras de fantasía del autor, cada una en un mundo
+          diferente pero conectado por una misma cosmología y una historia común. Los libros sueltos son aquellos que no
+          forman parte de una saga mayor, como Nacidos de la Bruma o El Archivo de las Tormentas, sino que son historias
+          independientes que se pueden leer por separado. Algunos de estos libros son Elantris, El aliento de los
+          dioses, El alma del emperador y las novelas gráficas de Arena Blanca. Me gustan estos libros porque me
+          permiten conocer diferentes aspectos del Cosmere, como sus distintos sistemas de magia, sus culturas y sus
+          conflictos, todo esto ayuda a complementar el lore del universo. Además, los libros sueltos tienen un ritmo
+          más ágil y una trama más cerrada que las sagas, lo que los hace más fáciles de leer y disfrutar. A pesar de
+          que estos libros no tienen la misma profundidad y complejidad que las sagas principales, me parece que son
+          indispensables si se quiere adentrar en el Cosmere y tener una lectura más ligera.
+        </p>
+      </div>
+    </section>
+    <section id="top4" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 4</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">La rueda del tiempo</h2>
+      </div>
+      <img
+        src="https://wallpaperaccess.com/full/1401721.jpg"
+        alt="Imagen de un wallpaper del Cosmere"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          La rueda del tiempo, una saga de fantasía épica escrita por el estadounidense Robert Jordan y completada por
+          Brandon Sanderson tras la muerte del primero. La saga se compone de catorce libros más una precuela,
+          publicados entre 1990 y 2013. La saga se ambienta en un mundo donde la magia existe y está ligada a la Rueda
+          del Tiempo, una fuerza que hace girar el destino de los seres vivos. La historia sigue las aventuras de un
+          grupo de jóvenes que descubren que son parte de una antigua profecía que los involucra en la lucha contra el
+          Oscuro, una entidad maligna que quiere destruir la Rueda y el mundo. Me gusta esta saga porque me parece una
+          obra maestra de la literatura fantástica, que crea un universo rico y complejo, con una historia épica y
+          apasionante. Además, la saga tiene un gran elenco de personajes, con diferentes culturas, personalidades y
+          habilidades. El unico problema de esta saga es que puede resultar demasiado larga y densa en algunos momentos,
+          y que tiene algunos defectos en el ritmo y la narración. Creo que es una saga que hay que leer con paciencia y
+          con ganas de sumergirse en un mundo fascinante.
+        </p>
+      </div>
+    </section>
+    <section id="top3" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 3</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">El problema de los tres cuerpos</h2>
+      </div>
+      <img
+        src="https://img.europapress.es/fotoweb/fotonoticia_20180402132807_1200.jpg"
+        alt="Imagen de un wallpaper del el problema de los tres cuerpos"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Ya llegamos al top 3, en este puesto tenemos la trilogía El recuerdo del pasado de la Tierra o como yo la
+          llamo (como el nombre del primer libro), la trilogía del problema de los tres cuerpos, una obra de ciencia
+          ficción escrita por el chino Liu Cixin, publicada entre 2006 y 2010 y traducida al español entre 2016 y 2018.
+          La trilogía narra el primer contacto entre la humanidad y una civilización extraterrestre llamada trisolaris,
+          que vive en un sistema planetario caótico y hostil. La historia se inicia durante la Revolución Cultural
+          china, cuando una científica envía un mensaje al espacio revelando la existencia de la Tierra. Treinta años
+          después, un físico recibe una extraña señal que lo lleva a descubrir el juego de realidad virtual llamado Los
+          tres cuerpos, que recrea la historia y la cultura de trisolaris. Pronto se verá involucrado en una
+          conspiración que pretende facilitar la invasión alienígena. Los libros que componen la trilogía son El
+          problema de los tres cuerpos, El bosque oscuro y El fin de la muerte. Me gusta mucho esta trilogía de ciencia
+          ficción dado que es ambiciosa en hacer propuestas de lo que pueda ser de nuestra civilización en el futuro, y
+          cada libro tiene algo interesante, el primero, el misterio del videojuego te lleva a pensar en hipótesis de
+          por qué los soles en el mundo virtual del mismo, actúan de ese modo, el segundo, plantea una solución
+          perturbadora a la paradoja de Fermi, y el tercero el cómo se imagina el autor que puede evolucionar nuestra
+          civilización y el universo en conjunto.
+        </p>
+      </div>
+    </section>
+    <section id="top2" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 2</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Nacidos de la bruma</h2>
+      </div>
+      <img
+        src="https://i.pinimg.com/originals/0b/cc/87/0bcc875ecbff2748fa19aca8604ac153.jpg"
+        alt="Imagen de un wallpaper del mistborn"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          En el puesto número dos tenemos Nacidos de la bruma, una saga de fantasía épica escrita por el estadounidense
+          Brandon Sanderson, publicada a partir del 2006. La saga se compone de dos series por ahora (de un total de
+          cuatro): la primera era, formada por El imperio final, El pozo de la ascensión y El héroe de las eras, narra
+          la historia de una pequeña banda de ladrones que desarrolla un plan para robarle un valioso tesoro a un
+          dictador inmortal que ha vivido por más de mil años usando una magia conocida como Alomancia; la segunda,
+          formada por Aleación de ley, Sombras de identidad, Brazales de duelo y El metal perdido, se sitúa trescientos
+          años después y sigue las aventuras de un alguacil que investiga crímenes y conspiraciones en una sociedad
+          industrializada. La saga se ambienta en un planeta llamado Scadrial, situado dentro del universo del Cosmere,
+          donde la magia se basa en el uso de metales que otorgan habilidades especiales a los que los consumen. Me
+          gusta esta saga porque me parece una obra innovadora y entretenida, que combina elementos de fantasía, acción,
+          misterio y humor. Además, la saga tiene un sistema de magia original y coherente basado en leyes físicas. Si
+          hay algo que caracteriza a Brandon Sanderson, son sus maravillosos sistemas de magia, un mundo rico y variado,
+          y unos personajes carismáticos y complejos.
+        </p>
+      </div>
+    </section>
+    <section id="top1" class="py-4 max-w-3xl">
+      <div>
+        <span class="text-sm text-slate-600 dark:text-slate-400">Top 1</span>
+        <h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">El archivo de las tormentas</h2>
+      </div>
+      <img
+        src="https://e0.pxfuel.com/wallpapers/880/24/desktop-wallpaper-oathbringer-stormlight-archive.jpg"
+        alt="Imagen de un wallpaper del El archivo de las tormentas"
+        class="w-full h-[300px] mt-4 object-cover rounded-md shadow-md"
+      />
+      <div class="text-slate-800 dark:text-slate-200 mt-2 leading-relaxed">
+        <p>
+          Finalmente en el puesto número uno tenemos El archivo de las tormentas, una saga de fantasía épica escrita por
+          el estadounidense Brandon Sanderson (además de ser su saga principal), publicada a partir del 2010. La saga se
+          compone de cuatro libros publicados y seis más planeados hasta la fecha, que forman parte del universo
+          Cosmere. La saga se ambienta en el mundo de Roshar, un lugar azotado por tormentas devastadoras que
+          proporcionan energía mágica a algunos seres. La historia sigue las vidas de cuatro personajes que se ven
+          involucrados en una guerra milenaria contra unas fuerzas oscuras que amenazan con destruir el mundo. Los
+          libros que componen la saga son El camino de los reyes, Palabras radiantes, Juramentada y El ritmo de la
+          guerra. Me gusta esta saga porque me parece una obra maestra de la literatura fantástica, que crea un universo
+          rico y complejo, con una historia épica y apasionante. Además, la saga tiene unos personajes profundos y
+          carismáticos, un sistema de magia original y coherente, y un estilo narrativo fluido y envolvente. Tiene
+          además muchas referencias a los otros libros del Cosmere y amplia mucho el lore de este, es una saga que no
+          importa cuantas veces la leas, siempre encontraras algo nuevo que no viste anteriormente.
+        </p>
+        <p class="mt-1">Vida antes que muerte. Fuerza antes que debilidad. Viaje antes que destino.</p>
+      </div>
+    </section>
+  </main>
+</Layout>
